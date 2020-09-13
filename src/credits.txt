@@ -1,0 +1,16 @@
+I completely acknowledge all the copyrights.
+All the credits of this site belongs to 
+David Miller davidtmiller
+Web Developer - Founder of Start Bootstrap
+https://github.com/davidtmiller
+Origional resources can be found at:
+https://github.com/BlackrockDigital
+https://github.com/BlackrockDigital/startbootstrap-resume
+
+and 
+
+https://github.com/tailwindtoolbox/Profile-Card
+
+
+-Muhammad Yaqoob Junejo
+https://github.com/yaqoobjunejo
