@@ -5,13 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Zainab-Blog</title>
+
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./css/app.css">
   <link rel="stylesheet" href="./css/app.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #e1ad21;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: black;
+   color: #e1ad21;
+}
+</style>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" ></i></button>
   <header class="site-header">
     <i class="icon far fa-moon"></i>
     <div class="info">
@@ -25,7 +54,25 @@
     <label for="night-mode"><i class="fas fa-power-off"></i></label>
     <p class="tip">Night mode turned <span class="tip-action">off</span></p>
   </div>
+<script>
+var mybutton = document.getElementById("myBtn");
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
   <article class="site-post">
     <h2 class="title">The best way to promote Islam</h2>
     
@@ -55,8 +102,7 @@
 
   <footer class="site-footer">
     <div class="content">
-      <p>
-        Modified with <i class="icon fas fa-heart"></i> by <b><strong class="author">Zainab</strong></b>.
+      <p align="center">Modified with <i class="icon fas fa-heart"></i> by <b><strong class="author">Zainab</strong></b>.
       </p>
     </div>
   </footer>
